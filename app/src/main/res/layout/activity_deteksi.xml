@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeteksiActivity">
+
+    <Button
+        android:id="@+id/btn_detect"
+        android:text="REGISTER"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/camera_view"
+        android:layout_above="@id/btn_detect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.example.facerecognizer.helper.GraphicOverlay
+        android:id="@+id/graphic_overlay"
+        android:layout_above="@id/btn_detect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<jpegkit.JpegImageView-->
+        <!--android:id="@+id/jpgIV"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+</RelativeLayout>
